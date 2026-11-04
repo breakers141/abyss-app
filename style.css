@@ -2015,6 +2015,7 @@ strong {
 .wave svg {
   display: block;
   width: 200%;
+  max-width: none;
   height: 100%;
   will-change: transform;
 }
