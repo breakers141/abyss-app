@@ -2069,3 +2069,300 @@ strong {
     display: none;
   }
 }
+
+.sea-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.sea-life {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.js .sea-life.reveal {
+  transform: none;
+  transition: opacity 2.4s ease;
+}
+
+.js .sea-life:not(.seen) *,
+.js .sea-life:not(.seen) {
+  animation-play-state: paused !important;
+}
+
+.critter,
+.critter-still {
+  position: absolute;
+  left: 0;
+  will-change: transform;
+}
+
+.critter svg,
+.critter-still svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  overflow: visible;
+}
+
+.critter {
+  animation: swim-right 60s linear infinite;
+}
+
+.critter.left {
+  left: 100%;
+  animation-name: swim-left;
+}
+
+.critter > svg {
+  animation: bob 7s ease-in-out infinite alternate;
+}
+
+@keyframes swim-right {
+  from { transform: translate3d(-100%, 0, 0); }
+  to { transform: translate3d(100vw, 0, 0); }
+}
+
+@keyframes swim-left {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-100vw - 100%), 0, 0); }
+}
+
+.c-school {
+  top: 64%;
+  width: clamp(150px, 20vw, 280px);
+  opacity: 0.85;
+  animation-duration: 46s;
+  animation-delay: -14s;
+}
+
+.c-school .f {
+  animation: school 3.2s ease-in-out infinite alternate;
+}
+
+.c-school .f2 { animation-delay: -0.8s; }
+.c-school .f3 { animation-delay: -1.9s; }
+.c-school .f4 { animation-delay: -1.2s; }
+.c-school .f5 { animation-delay: -2.6s; }
+.c-school .f6 { animation-delay: -0.4s; }
+.c-school .f7 { animation-delay: -2.1s; }
+
+@keyframes school {
+  from { transform: translate(0, -2px); }
+  to { transform: translate(4px, 3px); }
+}
+
+.c-turtle {
+  top: 3%;
+  width: clamp(120px, 15vw, 210px);
+  animation-duration: 80s;
+  animation-delay: -34s;
+}
+
+.c-turtle .flip-front,
+.c-turtle .flip-back {
+  transform-box: fill-box;
+  animation: stroke-flipper 3.6s ease-in-out infinite alternate;
+}
+
+.c-turtle .flip-front { transform-origin: 100% 0%; }
+.c-turtle .flip-back { transform-origin: 100% 100%; animation-delay: -1.8s; }
+
+@keyframes stroke-flipper {
+  from { transform: rotate(-9deg); }
+  to { transform: rotate(10deg); }
+}
+
+.c-lf { width: clamp(64px, 7vw, 100px); }
+.c-lf1 { top: 5%; animation-duration: 38s; animation-delay: -9s; }
+.c-lf2 { top: 47%; width: clamp(52px, 5.5vw, 80px); animation-duration: 52s; animation-delay: -30s; }
+.c-lf3 { top: 83%; animation-duration: 44s; animation-delay: -21s; }
+
+.pho {
+  animation: twinkle 2.4s ease-in-out infinite alternate;
+}
+
+.c-lf2 .pho { animation-delay: -1s; }
+.c-lf3 .pho { animation-delay: -1.7s; }
+
+@keyframes twinkle {
+  from { opacity: 0.45; }
+  to { opacity: 1; }
+}
+
+.jelly-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3%;
+  width: clamp(48px, 5vw, 76px);
+  animation: rise 70s linear infinite;
+  animation-delay: -26s;
+  will-change: transform;
+}
+
+.c-jelly {
+  top: 0;
+  width: 100%;
+}
+
+@keyframes rise {
+  from { transform: translate3d(0, 100%, 0); }
+  50% { transform: translate3d(14px, 40%, 0); }
+  to { transform: translate3d(0, -22%, 0); }
+}
+
+.jelly-bell {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: pulse-bell 2.8s ease-in-out infinite;
+}
+
+.jelly-arms {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+  animation: sway 2.8s ease-in-out infinite;
+}
+
+@keyframes pulse-bell {
+  0%, 100% { transform: scale(1, 1); }
+  40% { transform: scale(0.88, 1.08); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: skewX(0deg) scaleY(1); }
+  40% { transform: skewX(4deg) scaleY(0.95); }
+  70% { transform: skewX(-3deg) scaleY(1.02); }
+}
+
+.c-angler {
+  top: 66%;
+  width: clamp(130px, 15vw, 220px);
+  animation-duration: 96s;
+  animation-delay: -58s;
+}
+
+.c-angler-amber {
+  top: 6%;
+  width: clamp(120px, 13vw, 190px);
+  animation-duration: 110s;
+  animation-delay: -30s;
+}
+
+.lure-halo {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: halo 3.6s ease-in-out infinite;
+}
+
+@keyframes halo {
+  0%, 100% { opacity: 0.7; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+
+.tail {
+  transform-box: fill-box;
+  transform-origin: 100% 50%;
+  animation: tail 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes tail {
+  from { transform: skewY(-6deg); }
+  to { transform: skewY(6deg); }
+}
+
+.c-dumbo {
+  top: 10%;
+  width: clamp(84px, 9vw, 130px);
+  animation-duration: 140s;
+  animation-delay: -60s;
+}
+
+.c-dumbo > svg {
+  animation: drift-bob 5s ease-in-out infinite alternate;
+}
+
+.ear {
+  transform-box: fill-box;
+  animation: flap 1.6s ease-in-out infinite alternate;
+}
+
+.ear-l { transform-origin: 100% 70%; }
+.ear-r { transform-origin: 0% 70%; animation-name: flap-r; }
+
+@keyframes flap {
+  from { transform: rotate(14deg); }
+  to { transform: rotate(-16deg); }
+}
+
+@keyframes flap-r {
+  from { transform: rotate(-14deg); }
+  to { transform: rotate(16deg); }
+}
+
+@keyframes bob {
+  from { transform: translate3d(0, -6px, 0); }
+  to { transform: translate3d(0, 6px, 0); }
+}
+
+@keyframes drift-bob {
+  from { transform: translate3d(0, -14px, 0); }
+  to { transform: translate3d(0, 14px, 0); }
+}
+
+.speck {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 250, 255, 0.95) 0%, rgba(98, 226, 242, 0.4) 35%, transparent 70%);
+  opacity: 0;
+  animation: flash 7s ease-in-out infinite;
+}
+
+.speck.dim { width: 7px; height: 7px; }
+.sp1 { left: 12%; top: 18%; animation-delay: -1s; }
+.sp2 { left: 78%; top: 12%; animation-delay: -3.4s; animation-duration: 9s; }
+.sp3 { left: 46%; top: 40%; animation-delay: -5.2s; }
+.sp4 { left: 88%; top: 58%; animation-delay: -2.2s; animation-duration: 11s; }
+.sp5 { left: 24%; top: 84%; animation-delay: -6.1s; animation-duration: 8s; }
+.sp6 { left: 62%; top: 90%; animation-delay: -4s; animation-duration: 10s; }
+
+@keyframes flash {
+  0%, 70%, 100% { opacity: 0; }
+  78% { opacity: 1; }
+  88% { opacity: 0.2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .critter,
+  .critter > svg,
+  .critter *,
+  .jelly-track,
+  .critter-still *,
+  .speck {
+    animation: none !important;
+  }
+
+  .speck { opacity: 0.6; }
+  .critter, .critter.left { transform: none; }
+  .c-school { left: 58%; }
+  .c-turtle { left: 70%; }
+  .c-lf1 { left: 72%; }
+  .c-lf2 { left: 40%; }
+  .c-lf3 { left: 8%; }
+  .jelly-track { transform: translate3d(0, 30%, 0); }
+  .c-angler { left: 8%; }
+  .c-angler-amber { left: 70%; }
+  .c-dumbo { left: 76%; }
+}
+
+@media print {
+  .sea-life { display: none; }
+}

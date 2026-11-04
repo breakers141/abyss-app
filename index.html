@@ -9,12 +9,73 @@
   <meta name="theme-color" content="#145a73">
   <meta name="description" content="Abyss is dark mode for Safari on iPhone, iPad and Mac. Four sea themes, website-by-website control, and nothing collected.">
   <title>Abyss: dark mode for Safari</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="sea-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="g-body" cx="0.66" cy="0.28" r="0.9">
+        <stop offset="0" stop-color="#336790"/>
+        <stop offset="0.55" stop-color="#1b3a58"/>
+        <stop offset="1" stop-color="#0c1b2c"/>
+      </radialGradient>
+      <linearGradient id="g-fin" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2f5f86"/>
+        <stop offset="1" stop-color="#18324d"/>
+      </linearGradient>
+      <linearGradient id="g-belly" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#1c4363"/>
+        <stop offset="0.6" stop-color="#3a7698"/>
+        <stop offset="1" stop-color="#86bdd2"/>
+      </linearGradient>
+      <linearGradient id="g-rod" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#1b3a58"/>
+        <stop offset="1" stop-color="#6fdcec"/>
+      </linearGradient>
+      <linearGradient id="g-rod-amber" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#1b3a58"/>
+        <stop offset="1" stop-color="#e9b86a"/>
+      </linearGradient>
+      <radialGradient id="g-glow">
+        <stop offset="0" stop-color="#effdff"/>
+        <stop offset="0.16" stop-color="#9ff3fc"/>
+        <stop offset="0.42" stop-color="#62e2f2" stop-opacity="0.35"/>
+        <stop offset="1" stop-color="#62e2f2" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="g-glow-amber">
+        <stop offset="0" stop-color="#fff6e6"/>
+        <stop offset="0.16" stop-color="#ffd48f"/>
+        <stop offset="0.42" stop-color="#f0b45a" stop-opacity="0.35"/>
+        <stop offset="1" stop-color="#f0b45a" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="g-jelly" cx="0.5" cy="0.25" r="0.75">
+        <stop offset="0" stop-color="#b4ecfa" stop-opacity="0.45"/>
+        <stop offset="1" stop-color="#62e2f2" stop-opacity="0.06"/>
+      </radialGradient>
+      <symbol id="fish" viewBox="0 0 60 26">
+        <path d="M10 13 L1 5 C3 10 3 16 1 21 Z" fill="url(#g-fin)"/>
+        <path d="M8 13 C16 4 36 3 50 11 C54 13 54 15 50 16 C36 23 16 22 8 13 Z" fill="url(#g-belly)"/>
+        <circle cx="44" cy="11.4" r="1.7" fill="#04080d"/>
+      </symbol>
+      <symbol id="lanternfish" viewBox="0 0 90 40" overflow="visible">
+        <path d="M15 20 L2 10 C5 16 5 24 2 30 Z" fill="url(#g-fin)"/>
+        <path d="M40 10 C46 3 54 4 57 11 Z" fill="url(#g-fin)"/>
+        <path d="M10 20 C20 8 52 6 74 14 C82 17 84 22 76 26 C56 34 22 32 10 20 Z" fill="url(#g-body)"/>
+        <circle cx="70" cy="17" r="4.4" fill="#04080d"/>
+        <circle cx="71.6" cy="15.6" r="1.3" fill="#dff8ff"/>
+        <g class="pho">
+          <circle cx="26" cy="26" r="5" fill="url(#g-glow)"/><circle cx="36" cy="28.2" r="5" fill="url(#g-glow)"/>
+          <circle cx="46" cy="29" r="5" fill="url(#g-glow)"/><circle cx="56" cy="28.4" r="5" fill="url(#g-glow)"/>
+          <circle cx="65" cy="25.6" r="5" fill="url(#g-glow)"/><circle cx="31" cy="18" r="4" fill="url(#g-glow)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
 
   <div class="snow" aria-hidden="true"><span class="s1"></span><span class="s2"></span><span class="s3"></span></div>
 
@@ -36,6 +97,18 @@
       <div class="wave wave-far"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 34 Q120 25 240 34 T480 34 T720 34 T960 34 T1200 34 T1440 34 T1680 34 T1920 34 T2160 34 T2400 34 T2640 34 T2880 34 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 34 Q120 25 240 34 T480 34 T720 34 T960 34 T1200 34 T1440 34 T1680 34 T1920 34 T2160 34 T2400 34 T2640 34 T2880 34"/></svg></div>
       <div class="wave wave-mid"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 26 Q90 19 180 26 T360 26 T540 26 T720 26 T900 26 T1080 26 T1260 26 T1440 26 T1620 26 T1800 26 T1980 26 T2160 26 T2340 26 T2520 26 T2700 26 T2880 26 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 26 Q90 19 180 26 T360 26 T540 26 T720 26 T900 26 T1080 26 T1260 26 T1440 26 T1620 26 T1800 26 T1980 26 T2160 26 T2340 26 T2520 26 T2700 26 T2880 26"/></svg></div>
       <div class="wave wave-near"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 18 Q60 13 120 18 T240 18 T360 18 T480 18 T600 18 T720 18 T840 18 T960 18 T1080 18 T1200 18 T1320 18 T1440 18 T1560 18 T1680 18 T1800 18 T1920 18 T2040 18 T2160 18 T2280 18 T2400 18 T2520 18 T2640 18 T2760 18 T2880 18 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 18 Q60 13 120 18 T240 18 T360 18 T480 18 T600 18 T720 18 T840 18 T960 18 T1080 18 T1200 18 T1320 18 T1440 18 T1560 18 T1680 18 T1800 18 T1920 18 T2040 18 T2160 18 T2280 18 T2400 18 T2520 18 T2640 18 T2760 18 T2880 18"/></svg></div>
+    </div>
+
+    <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-school"><svg viewBox="0 0 230 110" focusable="false">
+          <g class="f f1"><use href="#fish" x="150" y="10" width="60" height="26"/></g>
+          <g class="f f2"><use href="#fish" x="110" y="34" width="52" height="23"/></g>
+          <g class="f f3"><use href="#fish" x="168" y="46" width="56" height="24"/></g>
+          <g class="f f4"><use href="#fish" x="70" y="12" width="46" height="20"/></g>
+          <g class="f f5"><use href="#fish" x="124" y="70" width="50" height="22"/></g>
+          <g class="f f6"><use href="#fish" x="40" y="48" width="44" height="19"/></g>
+          <g class="f f7"><use href="#fish" x="80" y="84" width="40" height="18"/></g>
+        </svg></div>
     </div>
 
     <header class="site-header">
@@ -108,6 +181,24 @@
 
   <main id="main">
     <section class="zone zone-shallows" id="what" aria-labelledby="what-title">
+      <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-turtle left"><svg viewBox="0 0 170 120" focusable="false"><g transform="translate(170 0) scale(-1 1)">
+          <path d="M50 44 C40 38 30 34 20 35 C28 43 40 48 54 50 Z" fill="url(#g-fin)"/>
+          <path class="flip-back" d="M106 40 C100 22 84 8 60 2 C74 16 86 28 94 44 Z" fill="url(#g-fin)"/>
+          <path d="M36 55 L24 58 L36 62 Z" fill="url(#g-fin)"/>
+          <path d="M120 50 C128 41 146 41 153 51 C156 58 151 65 142 67 C132 69 124 65 120 60 Z" fill="url(#g-fin)"/>
+          <circle cx="143" cy="52" r="2.8" fill="#04080d"/><circle cx="144" cy="51" r="0.9" fill="#dff8ff"/>
+          <ellipse cx="80" cy="57" rx="45" ry="31" fill="url(#g-body)"/>
+          <ellipse cx="80" cy="57" rx="45" ry="31" fill="none" stroke="#3a6f97" stroke-opacity="0.55" stroke-width="2"/>
+          <g fill="#5b97bd" fill-opacity="0.16">
+            <path d="M68 44 L92 44 L100 57 L92 70 L68 70 L60 57 Z"/>
+            <path d="M58 33 L66 42 L58 55 L44 55 L40 42 Z"/><path d="M102 33 L118 42 L120 55 L104 55 L94 42 Z"/>
+            <path d="M58 81 L66 72 L58 60 L44 60 L41 72 Z"/><path d="M102 81 L118 72 L120 60 L104 60 L94 72 Z"/>
+          </g>
+          <path d="M50 72 C38 77 28 86 24 96 C36 94 48 86 56 77 Z" fill="url(#g-fin)"/>
+          <path class="flip-front" d="M106 72 C104 90 90 108 66 117 C80 103 89 89 94 72 Z" fill="url(#g-fin)"/>
+        </g></svg></div>
+      </div>
       <div class="wrap section">
         <div class="section-head reveal">
           <h2 id="what-title">Every website, darkened with care.</h2>
@@ -157,6 +248,25 @@
     </section>
 
     <section class="zone zone-twilight" id="themes" data-depth="200" data-zone="Twilight Zone" aria-labelledby="themes-title">
+      <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-lf c-lf1 left"><svg viewBox="0 0 90 40" overflow="visible" focusable="false"><g transform="translate(90 0) scale(-1 1)"><use href="#lanternfish" width="90" height="40"/></g></svg></div>
+        <div class="critter c-lf c-lf2"><svg viewBox="0 0 90 40" overflow="visible" focusable="false"><g><use href="#lanternfish" width="90" height="40"/></g></svg></div>
+        <div class="critter c-lf c-lf3 left"><svg viewBox="0 0 90 40" overflow="visible" focusable="false"><g transform="translate(90 0) scale(-1 1)"><use href="#lanternfish" width="90" height="40"/></g></svg></div>
+        <div class="jelly-track"><div class="critter-still c-jelly"><svg viewBox="0 0 80 150" overflow="visible" focusable="false">
+          <g class="jelly-arms" fill="none" stroke-linecap="round">
+            <path d="M30 44 C24 64 36 80 28 100 C24 110 30 118 26 130" stroke="#8cebfa" stroke-opacity="0.38" stroke-width="1.8"/>
+            <path d="M40 44 C46 66 34 84 42 104 C46 116 38 126 42 138" stroke="#8cebfa" stroke-opacity="0.32" stroke-width="1.8"/>
+            <path d="M50 44 C56 62 44 80 52 98 C56 110 50 120 54 128" stroke="#8cebfa" stroke-opacity="0.38" stroke-width="1.8"/>
+            <path d="M12 44 C9 70 17 92 12 120" stroke="#8cebfa" stroke-opacity="0.2" stroke-width="1"/>
+            <path d="M68 44 C71 70 63 92 68 120" stroke="#8cebfa" stroke-opacity="0.2" stroke-width="1"/>
+          </g>
+          <g class="jelly-bell">
+            <path d="M8 44 C8 14 72 14 72 44 C64 40 56 46 48 42 C40 46 32 40 24 46 C18 42 12 46 8 44 Z" fill="url(#g-jelly)" stroke="#8cebfa" stroke-opacity="0.6" stroke-width="1.2"/>
+            <ellipse cx="40" cy="32" rx="15" ry="7" fill="#a6f1ff" fill-opacity="0.16"/>
+            <circle cx="40" cy="30" r="22" fill="url(#g-glow)" opacity="0.18"/>
+          </g>
+        </svg></div></div>
+      </div>
       <div class="wrap section">
         <p class="depth-mark"><b>200 m</b> Twilight Zone</p>
         <div class="section-head reveal">
@@ -205,6 +315,25 @@
     </section>
 
     <section class="zone zone-midnight" id="midnight" data-depth="1000" data-zone="Midnight Zone" aria-labelledby="t-midnight">
+      <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-angler"><svg viewBox="0 0 220 150" overflow="visible" focusable="false"><g>
+          <path class="tail" d="M62 84 C52 70 42 58 26 58 C12 58 10 70 18 77 C10 82 10 88 18 92 C10 99 12 110 26 110 C42 110 52 98 62 84 Z" fill="url(#g-fin)"/>
+          <path d="M58 84 C58 52 88 34 122 34 C152 34 172 52 176 70 C181 72 183 78 179 82 C176 86 171 86 168 89 C165 113 146 133 116 134 C84 135 58 116 58 84 Z" fill="url(#g-body)"/>
+          <path d="M100 94 C110 85 124 85 131 93 C123 101 111 105 102 101 Z" fill="url(#g-fin)" fill-opacity="0.9"/>
+          <circle cx="150" cy="69" r="6.2" fill="#04080d"/><circle cx="152.2" cy="66.8" r="1.9" fill="#e6fbff"/>
+          <path d="M150 99 C159 92 169 89 179 87" fill="none" stroke="#08121d" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M155 104 C164 101 172 96 177 91" fill="none" stroke="#2c5a80" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+          <path d="M126 37 C131 10 168 -2 189 12 C196 17 198 26 197 33" fill="none" stroke="url(#g-rod)" stroke-width="4.2" stroke-linecap="round"/>
+          <circle class="lure-halo" cx="197" cy="43" r="30" fill="url(#g-glow)"/>
+          <path d="M197 34 C203 38 205 44 202 48 C199 52 195 52 192 48 C189 44 191 38 197 34 Z" fill="#c9fbff"/>
+        </g></svg></div>
+        <span class="speck sp1"></span>
+        <span class="speck sp2"></span>
+        <span class="speck sp3"></span>
+        <span class="speck sp4"></span>
+        <span class="speck sp5"></span>
+        <span class="speck sp6"></span>
+      </div>
       <div class="wrap">
         <div class="theme theme-flip">
           <div class="theme-copy reveal">
@@ -242,6 +371,22 @@
     </section>
 
     <section class="zone zone-abyssal" id="abyssal" data-depth="4000" data-zone="Abyssal Plain" aria-labelledby="t-abyssal">
+      <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-dumbo left"><svg viewBox="0 0 140 140" overflow="visible" focusable="false"><g transform="translate(140 0) scale(-1 1)">
+          <path class="ear ear-l" d="M40 46 C24 32 8 36 6 51 C16 56 28 56 42 56 Z" fill="url(#g-fin)"/>
+          <path class="ear ear-r" d="M100 46 C116 32 132 36 134 51 C124 56 112 56 98 56 Z" fill="url(#g-fin)"/>
+          <path d="M40 76 C36 94 28 108 16 118 C24 126 36 124 42 116 C44 128 56 132 61 121 C64 131 76 131 79 121 C84 132 96 128 98 116 C104 124 116 126 124 118 C112 108 104 94 100 76 Z" fill="url(#g-fin)" fill-opacity="0.95"/>
+          <path d="M70 12 C98 12 108 38 106 62 C104 80 96 90 70 90 C44 90 36 80 34 62 C32 38 42 12 70 12 Z" fill="url(#g-body)"/>
+          <circle cx="56" cy="62" r="5.4" fill="#04080d"/><circle cx="57.6" cy="60.4" r="1.6" fill="#e6fbff"/>
+          <circle cx="84" cy="62" r="5.4" fill="#04080d"/><circle cx="85.6" cy="60.4" r="1.6" fill="#e6fbff"/>
+        </g></svg></div>
+        <span class="speck dim sp1"></span>
+        <span class="speck dim sp2"></span>
+        <span class="speck dim sp3"></span>
+        <span class="speck dim sp4"></span>
+        <span class="speck dim sp5"></span>
+        <span class="speck dim sp6"></span>
+      </div>
       <div class="wrap">
         <div class="theme">
           <div class="theme-copy reveal">
@@ -279,6 +424,19 @@
     </section>
 
     <section class="zone zone-lantern" id="lantern" data-depth="lantern" data-zone="Your own light" aria-labelledby="t-lantern">
+      <div class="sea-life reveal" aria-hidden="true">
+        <div class="critter c-angler-amber left"><svg viewBox="0 0 220 150" overflow="visible" focusable="false"><g transform="translate(220 0) scale(-1 1)">
+          <path class="tail" d="M62 84 C52 70 42 58 26 58 C12 58 10 70 18 77 C10 82 10 88 18 92 C10 99 12 110 26 110 C42 110 52 98 62 84 Z" fill="url(#g-fin)"/>
+          <path d="M58 84 C58 52 88 34 122 34 C152 34 172 52 176 70 C181 72 183 78 179 82 C176 86 171 86 168 89 C165 113 146 133 116 134 C84 135 58 116 58 84 Z" fill="url(#g-body)"/>
+          <path d="M100 94 C110 85 124 85 131 93 C123 101 111 105 102 101 Z" fill="url(#g-fin)" fill-opacity="0.9"/>
+          <circle cx="150" cy="69" r="6.2" fill="#04080d"/><circle cx="152.2" cy="66.8" r="1.9" fill="#e6fbff"/>
+          <path d="M150 99 C159 92 169 89 179 87" fill="none" stroke="#08121d" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M155 104 C164 101 172 96 177 91" fill="none" stroke="#2c5a80" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+          <path d="M126 37 C131 10 168 -2 189 12 C196 17 198 26 197 33" fill="none" stroke="url(#g-rod-amber)" stroke-width="4.2" stroke-linecap="round"/>
+          <circle class="lure-halo" cx="197" cy="43" r="30" fill="url(#g-glow-amber)"/>
+          <path d="M197 34 C203 38 205 44 202 48 C199 52 195 52 192 48 C189 44 191 38 197 34 Z" fill="#fff0d2"/>
+        </g></svg></div>
+      </div>
       <div class="wrap">
         <div class="theme theme-flip">
           <div class="theme-copy reveal">
