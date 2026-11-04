@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'sha256-2eSY/19oOnMTVgiNjiT8/Z+gZUeTUaLh4BiDBRimYlw='; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#145a73">
+  <meta name="description" content="Abyss is dark mode for Safari on iPhone, iPad and Mac. Four sea themes, website-by-website control, and nothing collected.">
+  <title>Abyss: dark mode for Safari</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="snow" aria-hidden="true"><span class="s1"></span><span class="s2"></span><span class="s3"></span></div>
+  <div class="depth" id="depth" aria-hidden="true">
+    <div class="depth-readout"><span class="depth-dot"></span><span class="depth-m">0 m</span><span class="depth-zone">Sunlight Zone</span></div>
+    <div class="depth-rail">
+      <span class="depth-tick t0">0</span>
+      <span class="depth-tick t1">200</span>
+      <span class="depth-tick t2">1,000</span>
+      <span class="depth-tick t3">4,000</span>
+      <span class="depth-tick t4">Lantern</span>
+      <span class="depth-lure"></span>
+    </div>
+  </div>
+  <div class="zone zone-sunlit hero" data-depth="0" data-zone="Sunlight Zone">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="icon-192.png" alt="" width="34" height="34">
+          <span>Abyss</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <ul>
+            <li><a href="index.html" aria-current="page">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero-inner wrap">
+      <div class="hero-copy">
+      <img class="app-tile" src="icon-512.png" alt="The Abyss app icon: an anglerfish with a glowing lure" width="112" height="112">
+      <p class="eyebrow">Dark mode for Safari on iPhone, iPad and Mac</p>
+      <h1 id="top-title">Take Safari to the deep.</h1>
+      <p class="lead">Abyss gives bright websites a calm, readable dark. Choose a depth, then browse as normal.</p>
+      <div class="actions">
+        <a class="button" href="https://apps.apple.com/app/id6821133300">
+          Get Abyss on the App Store
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h9v9M16 4 4 16"/></svg>
+        </a>
+        <a class="button button-quiet" href="#what">See what it does</a>
+      </div>
+      <ul class="promise" aria-label="Privacy in short">
+        <li>No account</li>
+        <li>No tracking</li>
+        <li>Nothing collected</li>
+      </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="webpair">
+          <div class="web" data-theme="midnight">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+          </div>
+          <div class="web day" data-theme="light">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+          </div>
+        </div>
+        <p class="hero-visual-note">The same page, light and in Midnight Zone colours</p>
+      </div>
+    </div>
+    <a class="dive-cue" href="#what">
+      Dive
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </div>
+  <main id="main">
+    <section class="zone zone-shallows" id="what" aria-labelledby="what-title">
+      <div class="wrap section">
+        <div class="section-head reveal">
+          <h2 id="what-title">Every website, darkened with care.</h2>
+          <p>Abyss is a Safari extension. It reads each page's own colours and makes a dark version of them, so websites keep looking like themselves, with readable text, natural photos and controls that keep working.</p>
+        </div>
+        <ul class="features">
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span>
+            <h3>Automatic or Always</h3>
+            <p>Darken websites when your device is in dark mode, or at all times. Off is there too, whenever you want the original look back.</p>
+          </li>
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></span>
+            <h3>Photos stay natural</h3>
+            <p>Photos and videos keep their original colours unless you choose Slightly Dimmed. Dark logos and icons can be shown inverted, so they stay visible.</p>
+          </li>
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span>
+            <h3>Website by website</h3>
+            <p>From the Abyss button in Safari, give any website its own theme and its own Automatic, Always or Off. Reset it whenever you like.</p>
+          </li>
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"/></svg></span>
+            <h3>Good dark modes stay</h3>
+            <p>When a website already shows a good dark theme of its own, Abyss is designed to leave it in charge.</p>
+          </li>
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><rect x="7" y="9" width="10" height="7" rx="1.5"/></svg></span>
+            <h3>The small windows too</h3>
+            <p>Cookie windows, sign-in, payment and human-check boxes inside a page are darkened along with it. What you type in them is never read.</p>
+          </li>
+          <li class="feature reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3>Private on your device</h3>
+            <p>Pages are processed on your device. There is no account, no ads, no analytics and no tracking.</p>
+          </li>
+        </ul>
+        <figure class="fact reveal">
+          <blockquote>
+            <p><span class="fact-label">At 100 m</span>Red animals look black in the Twilight Zone, because red sunlight does not reach deeper than about 100 m.</p>
+          </blockquote>
+          <figcaption>Source: <a href="https://oceanexplorer.noaa.gov/ocean-fact/red-color/">NOAA Ocean Exploration</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="zone zone-twilight" id="themes" data-depth="200" data-zone="Twilight Zone" aria-labelledby="themes-title">
+      <div class="wrap section">
+        <p class="depth-mark"><b>200 m</b> Twilight Zone</p>
+        <div class="section-head reveal">
+          <h2 id="themes-title">Choose your dark.</h2>
+          <p>Four sea themes, each named for its depth. Pick one for every website in the app, or give a single website its own.</p>
+        </div>
+        <ul class="depth-legend" aria-label="The four themes">
+          <li><a href="#twilight"><span class="chip chip-tw" aria-hidden="true"></span>Twilight Zone <small>200 m</small></a></li>
+          <li><a href="#midnight"><span class="chip chip-mn" aria-hidden="true"></span>Midnight Zone <small>1,000 m</small></a></li>
+          <li><a href="#abyssal"><span class="chip chip-ab" aria-hidden="true"></span>Abyssal Plain <small>4,000 m</small></a></li>
+          <li><a href="#lantern"><span class="chip chip-ln" aria-hidden="true"></span>Lantern <small>your own light</small></a></li>
+        </ul>
+        <div class="theme" id="twilight">
+          <div class="theme-copy reveal">
+            <h3>Twilight Zone</h3>
+            <p class="theme-desc">A soft blue-grey, where the last light fades.</p>
+            <ul class="swatches" aria-label="Twilight Zone colours">
+              <li><span class="chip c-tw-page" aria-hidden="true"></span><span class="name">Page</span> <code>#1C2433</code></li>
+              <li><span class="chip c-tw-text" aria-hidden="true"></span><span class="name">Text</span> <code>#DDE3EA</code></li>
+              <li><span class="chip c-tw-link" aria-hidden="true"></span><span class="name">Links</span> <code>#8CC4FF</code></li>
+            </ul>
+            <p class="contrast-note">Text contrast 12.0 to 1, links 8.5 to 1.</p>
+            <figure class="fact">
+              <blockquote>
+                <p><span class="fact-label">Did you know?</span>The Twilight Zone lies about 200 to 1,000 m down: light enough for animals to see, too dim for plants to grow.</p>
+              </blockquote>
+              <figcaption>Source: <a href="https://twilightzone.whoi.edu/explore-the-otz/">Woods Hole Oceanographic Institution</a></figcaption>
+            </figure>
+          </div>
+          <figure class="sample reveal">
+            <div class="web" data-theme="twilight" aria-hidden="true">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+            </div>
+            <figcaption>A sample page in Twilight Zone colours</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-midnight" id="midnight" data-depth="1000" data-zone="Midnight Zone" aria-labelledby="t-midnight">
+      <div class="wrap">
+        <div class="theme theme-flip">
+          <div class="theme-copy reveal">
+            <p class="depth-mark"><b>1,000 m</b> Midnight Zone</p>
+            <h3 id="t-midnight">Midnight Zone</h3>
+            <p class="theme-desc">A balanced, warm charcoal dark.</p>
+            <ul class="swatches" aria-label="Midnight Zone colours">
+              <li><span class="chip c-mn-page" aria-hidden="true"></span><span class="name">Page</span> <code>#151719</code></li>
+              <li><span class="chip c-mn-text" aria-hidden="true"></span><span class="name">Text</span> <code>#E8E6E3</code></li>
+              <li><span class="chip c-mn-link" aria-hidden="true"></span><span class="name">Links</span> <code>#79B8FF</code></li>
+            </ul>
+            <p class="contrast-note">Text contrast 14.4 to 1, links 8.7 to 1.</p>
+            <figure class="fact">
+              <blockquote>
+                <p><span class="fact-label">Did you know?</span>No sunlight reaches below about 1,000 m: the only light in the Midnight Zone comes from the animals themselves.</p>
+              </blockquote>
+              <figcaption>Source: <a href="https://www.noaa.gov/jetstream/ocean/layers-of-ocean">NOAA</a></figcaption>
+            </figure>
+          </div>
+          <figure class="sample reveal">
+            <div class="web" data-theme="midnight" aria-hidden="true">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+            </div>
+            <figcaption>A sample page in Midnight Zone colours</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-abyssal" id="abyssal" data-depth="4000" data-zone="Abyssal Plain" aria-labelledby="t-abyssal">
+      <div class="wrap">
+        <div class="theme">
+          <div class="theme-copy reveal">
+            <p class="depth-mark"><b>4,000 m</b> Abyssal Plain</p>
+            <h3 id="t-abyssal">Abyssal Plain</h3>
+            <p class="theme-desc">True black, as deep as it goes.</p>
+            <ul class="swatches" aria-label="Abyssal Plain colours">
+              <li><span class="chip c-ab-page" aria-hidden="true"></span><span class="name">Page</span> <code>#000000</code></li>
+              <li><span class="chip c-ab-text" aria-hidden="true"></span><span class="name">Text</span> <code>#F0EEEB</code></li>
+              <li><span class="chip c-ab-link" aria-hidden="true"></span><span class="name">Links</span> <code>#82BDFF</code></li>
+            </ul>
+            <p class="contrast-note">Text contrast 18.1 to 1, links 10.7 to 1.</p>
+            <figure class="fact">
+              <blockquote>
+                <p><span class="fact-label">Did you know?</span>"Abyss" comes from a Greek word meaning "no bottom", from when people thought the ocean was bottomless.</p>
+              </blockquote>
+              <figcaption>Source: <a href="https://www.noaa.gov/jetstream/ocean/layers-of-ocean">NOAA</a></figcaption>
+            </figure>
+          </div>
+          <figure class="sample reveal">
+            <div class="web" data-theme="abyssal" aria-hidden="true">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+            </div>
+            <figcaption>A sample page in Abyssal Plain colours</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-lantern" id="lantern" data-depth="lantern" data-zone="Your own light" aria-labelledby="t-lantern">
+      <div class="wrap">
+        <div class="theme theme-flip">
+          <div class="theme-copy reveal">
+            <p class="depth-mark"><b>Your own light</b> below the plain</p>
+            <h3 id="t-lantern">Lantern</h3>
+            <p class="theme-desc">A warm amber glow: your own light in the deep.</p>
+            <ul class="swatches" aria-label="Lantern colours">
+              <li><span class="chip c-ln-page" aria-hidden="true"></span><span class="name">Page</span> <code>#1E1A15</code></li>
+              <li><span class="chip c-ln-text" aria-hidden="true"></span><span class="name">Text</span> <code>#ECDCC2</code></li>
+              <li><span class="chip c-ln-link" aria-hidden="true"></span><span class="name">Links</span> <code>#F0B45A</code></li>
+            </ul>
+            <p class="contrast-note">Text contrast 12.8 to 1, links 9.4 to 1.</p>
+            <figure class="fact">
+              <blockquote>
+                <p><span class="fact-label">Did you know?</span>Most light made in the sea is blue, because blue travels furthest through water.</p>
+              </blockquote>
+              <figcaption>Source: <a href="https://oceanexplorer.noaa.gov/ocean-fact/bioluminescence/">NOAA Ocean Exploration</a></figcaption>
+            </figure>
+          </div>
+          <figure class="sample reveal">
+            <div class="web" data-theme="lantern" aria-hidden="true">
+              <div class="w-bar"><span class="w-logo">The Tideline</span><span class="w-menu"></span></div>
+              <div class="w-nav"><span>News</span><span>Science</span><span>Weather</span><span>Sport</span></div>
+              <div class="w-img"></div>
+              <div class="w-tag">Science</div>
+              <div class="w-h">Survey films glowing fish at 4,000 metres</div>
+              <div class="w-p">The crew found anglerfish carrying their own light through the dark. <span class="w-a">Read the full story</span></div>
+              <div class="w-card"><b>Most read</b><span>Tides to peak this weekend</span><span>Harbour reopens after storm</span></div>
+              <div class="w-btn">Subscribe</div>
+            </div>
+            <figcaption>A sample page in Lantern colours</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-floor" id="private" aria-labelledby="private-title">
+      <div class="wrap section">
+        <div class="privacy-band">
+          <div class="reveal">
+            <h2 class="big" id="private-title">What happens on your device stays there.</h2>
+            <p>Abyss does not collect personal information or browsing data. It does not send the websites you visit, page contents, search queries, form entries, account information, or browsing history to us or to third parties.</p>
+            <p class="fine">To darken a page, Abyss may download that site's own stylesheet and picture files again, without cookies. Nothing is sent anywhere else. The <a href="privacy.html">privacy policy</a> explains exactly what it reads.</p>
+          </div>
+          <ul class="nos reveal">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No account</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No ads</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No analytics</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No tracking</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No subscription</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Settings stay on each device</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-floor" id="different" aria-labelledby="different-title">
+      <div class="wrap section">
+        <div class="section-head reveal">
+          <h2 id="different-title">Not just a colour flip.</h2>
+          <p>The quickest kind of dark mode turns every colour on the page into its opposite. Abyss takes the careful way.</p>
+        </div>
+        <table class="compare reveal">
+          <caption class="visually-hidden">A simple colour flip compared with Abyss</caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">What changes</span></th>
+              <th scope="col">A simple colour flip</th>
+              <th scope="col" class="abyss-col">Abyss</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">How it works</th>
+              <td data-label="A simple colour flip">Inverts the whole page.</td>
+              <td data-label="Abyss" class="abyss-col">Reads the page's own colours and makes a dark version of them.</td>
+            </tr>
+            <tr>
+              <th scope="row">Photos and videos</th>
+              <td data-label="A simple colour flip">Come out like negatives unless they are flipped back.</td>
+              <td data-label="Abyss" class="abyss-col">Keep their own colours, or are gently dimmed if you choose.</td>
+            </tr>
+            <tr>
+              <th scope="row">A website's own colours</th>
+              <td data-label="A simple colour flip">Turn into their opposites: a red button comes out cyan.</td>
+              <td data-label="Abyss" class="abyss-col">Are designed to keep their character, so the website still looks like itself.</td>
+            </tr>
+            <tr>
+              <th scope="row">Websites that are already dark</th>
+              <td data-label="A simple colour flip">Get flipped back to bright.</td>
+              <td data-label="Abyss" class="abyss-col">Can keep their own dark mode.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="zone zone-floor" id="faq" aria-labelledby="faq-title">
+      <div class="wrap section">
+        <div class="section-head reveal">
+          <h2 id="faq-title">Questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Where does Abyss work?</summary>
+            <div>
+              <p>Abyss is a Safari extension for iPhone, iPad and Mac. It works on websites in Safari. It cannot change Safari's own pages, such as the Start Page.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Does every website darken cleanly?</summary>
+            <div>
+              <p>Most websites were designed for a light background, and a few do not darken cleanly. On that website, open the Abyss panel and try a different theme, or set Darken this website to Off to go back to the original look.</p>
+              <p>Abyss does not recolour videos, or pictures a website draws itself (canvas and WebGL, which some maps, charts and games use).</p>
+            </div>
+          </details>
+          <details>
+            <summary>What if a website already has its own dark mode?</summary>
+            <div>
+              <p>When Use the website's own dark mode is on (it is on unless you change it), Abyss is designed to leave a good dark theme a website already shows in control. If you prefer Abyss's look there, turn it off in the Abyss panel.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Why does Safari ask for website access?</summary>
+            <div>
+              <p>Safari asks for permission for Abyss to read and modify webpages. This permission is necessary to calculate and apply a dark appearance. Page processing happens on your device. Abyss does not use that access to build a browsing profile, collect form data, or sell information.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What data does Abyss collect?</summary>
+            <div>
+              <p>None. There is no account, no advertising, no analytics and no tracking. Your appearance choices and website settings are stored on your device. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Do my settings sync between devices?</summary>
+            <div>
+              <p>No. Abyss keeps your appearance and website settings on each device and does not sync them.</p>
+            </div>
+          </details>
+        </div>
+        <p class="fine">Setting up, or something not right? See <a href="support.html">Support</a>, or email <a href="mailto:abyss.support@icloud.com">abyss.support@icloud.com</a>.</p>
+      </div>
+    </section>
+    <section class="zone zone-floor" id="maker" aria-labelledby="maker-title">
+      <div class="wrap">
+        <div class="maker reveal">
+          <span class="maker-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/><path d="M2 19c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/><circle cx="16" cy="7" r="2.2"/><path d="M10 4c2 0 3.5 1 4.2 2"/></svg></span>
+          <div>
+            <h2 id="maker-title">Who makes Abyss</h2>
+            <p>I'm Tom, and I'm obsessed with all-black tech: a black phone, a black laptop, and dark mode on absolutely everything. Away from the screen I love scuba diving, and the way the water darkens as you go deeper is where Abyss got its name and its sea. I built it because I wanted every website to feel like that dive: calm, dark and still itself.</p>
+            <p class="sig">Tom</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="zone zone-floor finale" aria-labelledby="finale-title">
+      <div class="wrap">
+        <div class="angler reveal" aria-hidden="true">
+          <img src="icon-512.png" alt="" width="512" height="512">
+          <span class="lure-glow"></span>
+        </div>
+        <h2 id="finale-title">Ready to go deeper?</h2>
+        <p>Abyss for Safari on iPhone, iPad and Mac.</p>
+        <div class="actions">
+          <a class="button" href="https://apps.apple.com/app/id6821133300">
+            Get Abyss on the App Store
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h9v9M16 4 4 16"/></svg>
+          </a>
+        </div>
+        <figure class="fact fact-centre">
+          <blockquote>
+            <p><span class="fact-label">One last thing</span>A deep-sea anglerfish's lure glows with bacteria that settle in it while the fish is young.</p>
+          </blockquote>
+          <figcaption>Source: <a href="https://www.nhm.ac.uk/discover/news/2023/december/upside-down-deep-sea-anglerfish-might-be-hunting-prey.html">Natural History Museum</a></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-brand"><img src="icon-192.png" alt="" width="28" height="28">Abyss</p>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="https://apps.apple.com/app/id6821133300">App Store</a></li>
+        <li><a href="mailto:abyss.support@icloud.com">abyss.support@icloud.com</a></li>
+      </ul>
+      <p>Abyss's built-in website fixes come from the open-source Dark Reader project, used under the MIT licence.</p>
+      <p>This site uses no cookies, analytics or trackers, and loads nothing from other sites.</p>
+    </div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var meter = document.getElementById("depth");
+  if (!meter || !("IntersectionObserver" in window)) return;
+  root.classList.add("js");
+  var reveals = document.querySelectorAll(".reveal");
+  var seen = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("seen"); seen.unobserve(e.target); }
+    });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  reveals.forEach(function (el) { seen.observe(el); });
+  var stops = Array.prototype.slice.call(document.querySelectorAll("[data-depth]"));
+  var end = document.getElementById("private");
+  var metres = meter.querySelector(".depth-m");
+  var zone = meter.querySelector(".depth-zone");
+  var rail = meter.querySelector(".depth-rail");
+  var lure = meter.querySelector(".depth-lure");
+  function topOf(el) { return el.getBoundingClientRect().top + window.scrollY; }
+  function update() {
+    var probe = window.scrollY + window.innerHeight * 0.5;
+    var tops = stops.map(topOf);
+    var endTop = topOf(end);
+    var i = 0;
+    while (i < stops.length - 1 && probe >= tops[i + 1]) i++;
+    var next = i < stops.length - 1 ? tops[i + 1] : endTop;
+    var f = Math.max(0, Math.min(1, (probe - tops[i]) / Math.max(1, next - tops[i])));
+    var here = stops[i].getAttribute("data-depth");
+    var lantern = here === "lantern";
+    var label, pos;
+    if (lantern) {
+      label = "Lantern";
+      pos = 4;
+    } else {
+      var there = i < stops.length - 1 ? stops[i + 1].getAttribute("data-depth") : here;
+      var a = Number(here);
+      var b = there === "lantern" ? a : Number(there);
+      var m = a + (b - a) * f;
+      label = (Math.round(m / 10) * 10).toLocaleString("en-GB") + " m";
+      pos = Math.min(4, i + f);
+    }
+    metres.textContent = label;
+    zone.textContent = stops[i].getAttribute("data-zone");
+    meter.classList.toggle("lantern", lantern);
+    meter.classList.toggle("on", probe < endTop);
+    if (rail && lure && rail.offsetHeight) {
+      lure.style.setProperty("--lure-y", (pos / 4) * rail.offsetHeight + "px");
+    }
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+})();
+  </script>
+</body>
+</html>
