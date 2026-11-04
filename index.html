@@ -15,7 +15,9 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="snow" aria-hidden="true"><span class="s1"></span><span class="s2"></span><span class="s3"></span></div>
+
   <div class="depth" id="depth" aria-hidden="true">
     <div class="depth-readout"><span class="depth-dot"></span><span class="depth-m">0 m</span><span class="depth-zone">Sunlight Zone</span></div>
     <div class="depth-rail">
@@ -27,7 +29,15 @@
       <span class="depth-lure"></span>
     </div>
   </div>
+
   <div class="zone zone-sunlit hero" data-depth="0" data-zone="Sunlight Zone">
+    <div class="surface" aria-hidden="true">
+      <div class="shimmer"><span class="c1"></span><span class="c2"></span><span class="glints"></span></div>
+      <div class="wave wave-far"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 34 Q120 25 240 34 T480 34 T720 34 T960 34 T1200 34 T1440 34 T1680 34 T1920 34 T2160 34 T2400 34 T2640 34 T2880 34 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 34 Q120 25 240 34 T480 34 T720 34 T960 34 T1200 34 T1440 34 T1680 34 T1920 34 T2160 34 T2400 34 T2640 34 T2880 34"/></svg></div>
+      <div class="wave wave-mid"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 26 Q90 19 180 26 T360 26 T540 26 T720 26 T900 26 T1080 26 T1260 26 T1440 26 T1620 26 T1800 26 T1980 26 T2160 26 T2340 26 T2520 26 T2700 26 T2880 26 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 26 Q90 19 180 26 T360 26 T540 26 T720 26 T900 26 T1080 26 T1260 26 T1440 26 T1620 26 T1800 26 T1980 26 T2160 26 T2340 26 T2520 26 T2700 26 T2880 26"/></svg></div>
+      <div class="wave wave-near"><svg viewBox="0 0 2880 48" preserveAspectRatio="none" focusable="false"><path class="wave-fill" d="M0 18 Q60 13 120 18 T240 18 T360 18 T480 18 T600 18 T720 18 T840 18 T960 18 T1080 18 T1200 18 T1320 18 T1440 18 T1560 18 T1680 18 T1800 18 T1920 18 T2040 18 T2160 18 T2280 18 T2400 18 T2520 18 T2640 18 T2760 18 T2880 18 L2880 0 L0 0 Z"/><path class="wave-crest" d="M0 18 Q60 13 120 18 T240 18 T360 18 T480 18 T600 18 T720 18 T840 18 T960 18 T1080 18 T1200 18 T1320 18 T1440 18 T1560 18 T1680 18 T1800 18 T1920 18 T2040 18 T2160 18 T2280 18 T2400 18 T2520 18 T2640 18 T2760 18 T2880 18"/></svg></div>
+    </div>
+
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
@@ -43,6 +53,7 @@
         </nav>
       </div>
     </header>
+
     <div class="hero-inner wrap">
       <div class="hero-copy">
       <img class="app-tile" src="icon-512.png" alt="The Abyss app icon: an anglerfish with a glowing lure" width="112" height="112">
@@ -88,11 +99,13 @@
         <p class="hero-visual-note">The same page, light and in Midnight Zone colours</p>
       </div>
     </div>
+
     <a class="dive-cue" href="#what">
       Dive
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
     </a>
   </div>
+
   <main id="main">
     <section class="zone zone-shallows" id="what" aria-labelledby="what-title">
       <div class="wrap section">
@@ -100,6 +113,7 @@
           <h2 id="what-title">Every website, darkened with care.</h2>
           <p>Abyss is a Safari extension. It reads each page's own colours and makes a dark version of them, so websites keep looking like themselves, with readable text, natural photos and controls that keep working.</p>
         </div>
+
         <ul class="features">
           <li class="feature reveal">
             <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span>
@@ -132,6 +146,7 @@
             <p>Pages are processed on your device. There is no account, no ads, no analytics and no tracking.</p>
           </li>
         </ul>
+
         <figure class="fact reveal">
           <blockquote>
             <p><span class="fact-label">At 100 m</span>Red animals look black in the Twilight Zone, because red sunlight does not reach deeper than about 100 m.</p>
@@ -140,6 +155,7 @@
         </figure>
       </div>
     </section>
+
     <section class="zone zone-twilight" id="themes" data-depth="200" data-zone="Twilight Zone" aria-labelledby="themes-title">
       <div class="wrap section">
         <p class="depth-mark"><b>200 m</b> Twilight Zone</p>
@@ -153,6 +169,7 @@
           <li><a href="#abyssal"><span class="chip chip-ab" aria-hidden="true"></span>Abyssal Plain <small>4,000 m</small></a></li>
           <li><a href="#lantern"><span class="chip chip-ln" aria-hidden="true"></span>Lantern <small>your own light</small></a></li>
         </ul>
+
         <div class="theme" id="twilight">
           <div class="theme-copy reveal">
             <h3>Twilight Zone</h3>
@@ -186,6 +203,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-midnight" id="midnight" data-depth="1000" data-zone="Midnight Zone" aria-labelledby="t-midnight">
       <div class="wrap">
         <div class="theme theme-flip">
@@ -222,6 +240,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-abyssal" id="abyssal" data-depth="4000" data-zone="Abyssal Plain" aria-labelledby="t-abyssal">
       <div class="wrap">
         <div class="theme">
@@ -258,6 +277,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-lantern" id="lantern" data-depth="lantern" data-zone="Your own light" aria-labelledby="t-lantern">
       <div class="wrap">
         <div class="theme theme-flip">
@@ -294,6 +314,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-floor" id="private" aria-labelledby="private-title">
       <div class="wrap section">
         <div class="privacy-band">
@@ -313,6 +334,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-floor" id="different" aria-labelledby="different-title">
       <div class="wrap section">
         <div class="section-head reveal">
@@ -353,6 +375,7 @@
         </table>
       </div>
     </section>
+
     <section class="zone zone-floor" id="faq" aria-labelledby="faq-title">
       <div class="wrap section">
         <div class="section-head reveal">
@@ -400,6 +423,7 @@
         <p class="fine">Setting up, or something not right? See <a href="support.html">Support</a>, or email <a href="mailto:abyss.support@icloud.com">abyss.support@icloud.com</a>.</p>
       </div>
     </section>
+
     <section class="zone zone-floor" id="maker" aria-labelledby="maker-title">
       <div class="wrap">
         <div class="maker reveal">
@@ -412,6 +436,7 @@
         </div>
       </div>
     </section>
+
     <section class="zone zone-floor finale" aria-labelledby="finale-title">
       <div class="wrap">
         <div class="angler reveal" aria-hidden="true">
@@ -435,6 +460,7 @@
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="wrap">
       <p class="footer-brand"><img src="icon-192.png" alt="" width="28" height="28">Abyss</p>
@@ -449,12 +475,14 @@
       <p>This site uses no cookies, analytics or trackers, and loads nothing from other sites.</p>
     </div>
   </footer>
+
   <script>
 (function () {
   var root = document.documentElement;
   var meter = document.getElementById("depth");
   if (!meter || !("IntersectionObserver" in window)) return;
   root.classList.add("js");
+
   var reveals = document.querySelectorAll(".reveal");
   var seen = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -462,13 +490,16 @@
     });
   }, { rootMargin: "0px 0px -8% 0px" });
   reveals.forEach(function (el) { seen.observe(el); });
+
   var stops = Array.prototype.slice.call(document.querySelectorAll("[data-depth]"));
   var end = document.getElementById("private");
   var metres = meter.querySelector(".depth-m");
   var zone = meter.querySelector(".depth-zone");
   var rail = meter.querySelector(".depth-rail");
   var lure = meter.querySelector(".depth-lure");
+
   function topOf(el) { return el.getBoundingClientRect().top + window.scrollY; }
+
   function update() {
     var probe = window.scrollY + window.innerHeight * 0.5;
     var tops = stops.map(topOf);
@@ -499,6 +530,7 @@
       lure.style.setProperty("--lure-y", (pos / 4) * rail.offsetHeight + "px");
     }
   }
+
   window.addEventListener("scroll", update, { passive: true });
   window.addEventListener("resize", update);
   update();
